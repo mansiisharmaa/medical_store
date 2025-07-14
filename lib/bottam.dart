@@ -16,7 +16,6 @@ class _BottomnavscreenState extends State<Bottam> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     print("Check Value: $selected");

@@ -15,6 +15,13 @@ class _LoginState extends State<Login> {
    var email = "email@gmail.com";
    var emailFocus = FocusNode();
    var passFocus = FocusNode();
+
+  @override void initState() {
+    // TODO: implement initState
+    super.initState();
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

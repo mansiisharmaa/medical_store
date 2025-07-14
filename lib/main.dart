@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:medical_store/MedicineScreen.dart';
 import 'package:medical_store/bottam.dart';
 import 'package:medical_store/home.dart';
 import 'package:medical_store/login.dart';
+import 'package:medical_store/supplierslist.dart';
 
 void main() {
   runApp(const MainApp());
