@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:medical_store/MedicineScreen.dart';
-import 'package:medical_store/supplierslist.dart';
+import 'package:medical_store/SupplierBillScreen.dart';
+import 'package:medical_store/SupplierScreen.dart';
+import 'package:medical_store/suppliersdetails.dart';
 import 'package:medical_store/totalmedicin.dart';
 
 class Home extends StatefulWidget {
@@ -67,21 +69,27 @@ class _HomeState extends State<Home> {
               ),
             ),
             
-              Card(
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Total bills",style: TextStyle( fontWeight: FontWeight.bold,fontSize: 20,fontStyle: FontStyle.italic),),
-                  ]
+              GestureDetector(
+                onTap: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Supplierbillscreen()),);
+
+                },
+                child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Column(
+                     mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Total bills",style: TextStyle( fontWeight: FontWeight.bold,fontSize: 20,fontStyle: FontStyle.italic),),
+                    ]
+                  ),
                 ),
+                            ),
               ),
-            ),
            
              GestureDetector(
                onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Supplierslist()),);
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Supplierscreen()),);
               },
               child: Card(
               child: Padding(

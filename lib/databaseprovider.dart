@@ -21,6 +21,11 @@ class DatabaseProvider {
     await db.execute(
       'CREATE TABLE IF NOT EXISTS medicinmodel(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, discription TEXT, price REAL)',
     );
+
+
+    await db.execute(
+      'CREATE TABLE IF NOT EXISTS SupplierScreenModel(id INTEGER PRIMARY KEY AUTOINCREMENT, suppliername TEXT,agency TEXT,contactNo TEXT)',
+    );
   }
 
   Future<Database?> get db async {
